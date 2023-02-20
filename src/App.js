@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import NavMenu from './components/NavMenu'
+import { itemsMenu } from './menu-items'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavMenu items={itemsMenu} />
+      <div className="container main-container">
+        <div className="row">Section 1</div>
+        <div className="row">Section 1</div>
+        <div className="row">Section 1</div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

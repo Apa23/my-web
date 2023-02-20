@@ -1,0 +1,53 @@
+$primary-color: #f7a740;
+$navbar-offset: 15vh;
+
+@import 'animate.css';
+
+// @font-face {
+//   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+// }
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu{
+  height: 100%;
+  width: $navbar-offset;
+  background-color: rgb(88, 88, 88);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu .nav-item a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8rem  0;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.nav-menu .nav-item p{
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+}
+
+.nav-menu .nav-item svg{
+  font-size: 1.5rem;
+}
+
+.container.main-container{
+  margin-left: $navbar-offset;
+}
+
+.row{
+  height: 100vh;
+  background-color: $primary-color;
+}
